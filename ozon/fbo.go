@@ -304,7 +304,7 @@ type ListSupplyRequestsResponse struct {
 	LastSupplyOrderId int64 `json:"last_supply_order_id"`
 
 	// Supply request identifier
-	SupplyOrderId []string `json:"supply_order_id"`
+	SupplyOrderId []int64 `json:"supply_order_id"`
 }
 
 // Requests with supply to a specific warehouse and through a virtual distribution center (vDC) are taken into account
