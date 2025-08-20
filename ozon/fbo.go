@@ -616,7 +616,7 @@ func (c FBO) GetSupplyTimeslots(ctx context.Context, params *GetSupplyTimeslotsP
 
 	resp := &GetSupplyTimeslotsResponse{}
 
-	response, err := c.client.Request(ctx, http.MethodGet, url, params, resp, nil)
+	response, err := c.client.Request(ctx, http.MethodPost, url, params, resp, nil)
 	if err != nil {
 		return nil, err
 	}
